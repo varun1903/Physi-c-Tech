@@ -12,7 +12,7 @@
       body {
         background-color: #121212;
         font-family: Arial, Helvetica, sans-serif;
-        color: #f0f3ff;
+        color: #333;
         margin: 0;
         padding: 50px;
         text-align: justify;
@@ -376,6 +376,58 @@
           transform: translateY(0);
         }
       }
+      footer {
+        background-color: #0056b3;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-links li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    
+    h1, h2, h3 {
+        color: #0056b3;
+        text-shadow: 1px 1px 2px #999;
+        transition: color 0.3s, transform 0.3s;
+    }
+    
+    h1:hover, h2:hover, h3:hover {
+        color: #ffcc00;  /* Change to a different color on hover */
+        transform: scale(1.05);  /* Slightly enlarge the text */
+    }
+    
+    ul li span {
+        transition: color 0.3s, transform 0.3s;
+    }
+    
+    ul li span:hover {
+        color: #ffcc00;  /* Change to a different color on hover */
+        transform: scale(1.1);  /* Slightly enlarge the text */
+    }
+    
     </style>
   </head>
 
@@ -566,8 +618,15 @@
         </p>
       </div>
     </div>
-    <footer style="text-align: center">
-      &copy; 2024 Physi-c-Tech. All rights reserved.
-    </footer>
+    <footer>
+      <div class="footer-container">
+          <p>&copy; 2024 Physi-c-Tech. All rights reserved.</p>
+          <ul class="footer-links">
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+          </ul>
+      </div>
+  </footer>
   </body>
 </html>
